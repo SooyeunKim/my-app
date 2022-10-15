@@ -30,7 +30,9 @@ const WaitListPpl = () => {
                     Age: {ppl.age}
                     <br />
                     Number: {ppl.number}
+                    <p align="right">
                     <button onClick={() => remove(i)} className = 'removebtn'>X</button>
+                    </p>
                 </div>
             )
         })}
