@@ -25,15 +25,21 @@ const Booking = () => {
     setHospitals(hospitals.splice(i, 1));
   }
 
-  return <div className="container glass-morphism-1">
+  return <div className="glass-morphism-1">
+    <p align = "center">
+      <h1 className = "waitList" >Booking Hospitals</h1>
+    </p>
     {hospitalsDB.map((hospital, i) => { return (
-      <div key={i} className="container-item">
-        {hospital.name}
+      <div key={i} className="glass-morphism-1">
+        <span style={{ fontWeight: 'bold' }}>{hospital.name}</span>
         <br />
         City: {hospital.city}
         <br />
         Address: {hospital.address}
-        <button onClick={() => remove(i)}>Book</button>
+        <p align='right'>
+        <button onClick={() => remove(i)}
+        className = 'removebtn'>Book</button>
+        </p>
       </div>
     )})}
   </div>;
