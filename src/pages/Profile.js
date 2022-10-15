@@ -1,6 +1,6 @@
 import React from 'react';
 
-class NameForm extends React.Component {
+class Profile extends React.Component {  
   constructor(props) {
     super(props);
     this.state = {value: ''};
@@ -14,26 +14,27 @@ class NameForm extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.value);
     event.preventDefault();
   }
-}
 
-const Profile = () => {
+  render() {
     return (
-    <h1 Profile>
       <form onSubmit={this.handleSubmit}>
+        <div className="title">Profile</div>
         <label>
           Hospital:
           <input type="text" value={this.state.value} onChange={this.handleChange} />
         </label>
+        <br/>
         <label>
           Address:
           <input type="text" value={this.state.value} onChange={this.handleChange} />
         </label>
-        <input type="submit" value="Submit" />
+        <br/>
+        <input type="submit" value="Change" />
       </form>
-    </h1>);
-  };
-  
-  export default Profile;
+    );
+  }
+}
+
+export default Profile;

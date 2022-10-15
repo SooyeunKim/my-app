@@ -7,6 +7,7 @@ NavMenu,
 NavBtn,
 NavBtnLink,
 } from './NavbarElements';
+import logo from '../logo.png';
 
 const Navbar = () => {
 return (
@@ -14,11 +15,15 @@ return (
 	<Nav>
 		<Bars />
 		<NavMenu>
+			<img src={logo} alt="Logo" width="100px"/>
             <NavLink to='/' activeStyle>
                 Start
             </NavLink>
             <NavLink to='/main' activeStyle>
                 Look for Clinics
+            </NavLink>
+			<NavLink to='/waitlist' activeStyle>
+                waitlist
             </NavLink>
 		</NavMenu>
 		<NavBtn>

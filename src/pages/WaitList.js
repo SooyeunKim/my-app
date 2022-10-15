@@ -1,23 +1,28 @@
-import React from 'react';
+import React from 'react'
+import { useState } from 'react'
+import WaitListPpl from '../components/waitListPpl'
 
-function WaitList() {
-  return (
-    <h1>WaitList</h1>
-    <Button/>
-
-    const Button = () => {
-      const onClick = () => {
-        console.log('click')
-      }
-
-      return (
-        <button onClick={onClick} style={green} className="btn">
-          Add
-        <button/>
-      )
+const WaitList = () => {
+    const onClick = () => {
+        console.log('hi')
     }
-  )
-    
-};  
 
-  export default WaitList;
+    return (
+        <div className = "container">
+            <header>
+                <h1 className = "waitList" >Waitlist</h1>
+
+                <button 
+                onClick = {onClick}
+                className='btn'
+                >
+                    Add
+                </button>
+            </header>
+            <WaitListPpl/>
+        </div>
+    )
+
+}
+
+export default WaitList
