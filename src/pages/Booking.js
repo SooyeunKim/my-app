@@ -28,7 +28,7 @@ const Booking = () => {
         City: {hospital.city}
         <br />
         Address: {hospital.address}
-        <button onClick={() => remove(i)}>X</button>
+        <button onClick={console.log("yes")}>X</button>
       </div>
     )})}
   </div>;

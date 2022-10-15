@@ -1,16 +1,16 @@
 import React from "react";
 const waitListPplDB = [
-        {
-            name: 'Leanne Kim',
-            age: 17,
-            number: 911,
-        },
-        {
-            name: 'Sean Wang',
-            age: 17,
-            number: 119,
-        }
-    ];
+    {
+        name: 'Leanne Kim',
+        age: 17,
+        number: 911,
+    },
+    {
+        name: 'Sean Wang',
+        age: 17,
+        number: 119,
+    }
+];
 
 const WaitListPpl = () => {
     const [waitListPpl, setWaitListPpl] = React.useState(waitListPplDB);
@@ -23,15 +23,14 @@ const WaitListPpl = () => {
     return <div className="glass-morphism-1 h-auto flex">
         {waitListPplDB.map((ppl, i) => {
             return (
-                <Navbar />
                 <div key={i}>
-                    <br/>
-                    #{i+1}
-                    <br/>
+                    <br />
+                    #{i + 1}
+                    <br />
                     Name: {ppl.name}
-                    <br/>
+                    <br />
                     Age: {ppl.age}
-                    <br/>
+                    <br />
                     Number: {ppl.number}
                     <button onClick={() => remove(i)}>X</button>
                 </div>
