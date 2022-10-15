@@ -22,7 +22,7 @@ const WaitListPpl = () => {
     return <div className="container glass-morphism-1 h-auto flex">
         {waitListPplDB.map((ppl, i) => {
             return (
-                <div key={i} className="container-item">
+                <div key={i} className = "glass-morphism-1">
                     #{i + 1}
                     <br />
                     Name: {ppl.name}
@@ -30,7 +30,7 @@ const WaitListPpl = () => {
                     Age: {ppl.age}
                     <br />
                     Number: {ppl.number}
-                    <button onClick={() => remove(i)}>X</button>
+                    <button onClick={() => remove(i)} className = 'removebtn'>X</button>
                 </div>
             )
         })}

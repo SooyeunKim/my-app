@@ -22,15 +22,17 @@ class Start extends React.Component {
     return (
       <form>
       <div className='form-control'>
-          <label>Location</label>
-          <select>
+          <label>Location: </label>
+          <select className='select-control'>
             <option selected value="Toronto">Toronto</option>
             <option value="KW">Kitchener/Waterloo</option>
             <option value="Vancouver">Vancouver</option>
             <option value="Banff">Banff</option>
           </select>
+          <br/>
+          <br/>
+          <input type='submit' value='Submit'></input>
       </div>
-      <input type='submit' value='submit'></input>
       </form>
     )
   }
