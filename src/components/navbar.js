@@ -23,8 +23,11 @@ return (
                 Look for Clinics
             </NavLink>
 			<NavLink to='/waitlist' activeStyle>
-                waitlist
+                Waitlist
             </NavLink>
+			<NavLink to='/booking' activeStyles>
+				Booking
+			</NavLink>
 		</NavMenu>
 		<NavBtn>
 		<NavBtnLink to='/signin'>Sign In</NavBtnLink>

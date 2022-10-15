@@ -19,11 +19,10 @@ const WaitListPpl = () => {
         setWaitListPpl(waitListPpl.splice(i, 1));
     }
 
-    return <div className="glass-morphism-1 h-auto flex">
+    return <div className="container glass-morphism-1 h-auto flex">
         {waitListPplDB.map((ppl, i) => {
             return (
-                <div key={i}>
-                    <br />
+                <div key={i} className="container-item">
                     #{i + 1}
                     <br />
                     Name: {ppl.name}

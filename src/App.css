@@ -34,6 +34,31 @@
     radial-gradient(at 0% 50%, rgb(160, 251, 150) 0px, transparent 50%),
 }
 
+.container {
+  /* apply padding within */
+  padding: 1rem 1rem;
+  border: 1px solid #ccc;
+}
+.container-item {
+  margin-bottom: 20px;
+  outline: 2px solid #ccc;
+  border-radius: 5px;
+  /* add shadow */
+  box-shadow: 4px 4px 2px #ccc;
+  transition: all 0.5s ease;
+}
+/* the first hospital class should should have margin top of 10px */
+.container-item:first-child {
+  margin-top: 10px;
+}
+/* Add hover animations on hospital divs */
+.container-item:hover {
+  background-color: #eee;
+  cursor: pointer;
+  transform: translate(0px, -5px);
+  transition: all 0.5s linear;
+}
+
 .gradient-1 {
   background-color: hsla(0, 100%, 50%, 1);
   background-image:
@@ -48,7 +73,7 @@
 
 .glass-morphism-1 {
   /* From https://css.glass */
-  background: rgba(41, 41, 41, 0.38);
+  background: rgba(255, 255, 255, 0.38);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.2px);

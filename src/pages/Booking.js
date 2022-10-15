@@ -1,5 +1,4 @@
 import React from 'react';
-import "./styles/booking.css";
 
 
 const hospitalsDB = [
@@ -26,15 +25,15 @@ const Booking = () => {
     setHospitals(hospitals.splice(i, 1));
   }
 
-  return <div className="hospitals">
+  return <div className="container glass-morphism-1">
     {hospitalsDB.map((hospital, i) => { return (
-      <div key={i} className="hospital">
+      <div key={i} className="container-item">
         {hospital.name}
         <br />
         City: {hospital.city}
         <br />
         Address: {hospital.address}
-        <button onClick={() => remove(i)}>X</button>
+        <button onClick={() => remove(i)}>Book</button>
       </div>
     )})}
   </div>;
