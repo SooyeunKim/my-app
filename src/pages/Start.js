@@ -20,8 +20,9 @@ class Start extends React.Component {
 
   render() {
     return (
+      <>
       <form>
-      <div className='form-control'>
+        <div className='form-control'>
           <label>Location</label>
           <select>
             <option selected value="Toronto">Toronto</option>
@@ -29,9 +30,10 @@ class Start extends React.Component {
             <option value="Vancouver">Vancouver</option>
             <option value="Banff">Banff</option>
           </select>
-      </div>
-      <input type='submit' value='submit'></input>
+        </div>
+        <input type='button' onClick={() => window.open("/main", "_self")} value="Submit" />
       </form>
+      </>
     )
   }
 };
