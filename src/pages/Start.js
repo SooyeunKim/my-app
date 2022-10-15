@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 
 class Start extends React.Component {
   constructor(props) {
@@ -20,10 +21,11 @@ class Start extends React.Component {
 
   render() {
     return (
+      <>
       <form>
-      <div className='form-control'>
+        <div className='form-control'>
           <label>Location: </label>
-          <select className='select-control'>
+          <select className = 'select-control' >
             <option selected value="Toronto">Toronto</option>
             <option value="KW">Kitchener/Waterloo</option>
             <option value="Vancouver">Vancouver</option>
@@ -31,9 +33,10 @@ class Start extends React.Component {
           </select>
           <br/>
           <br/>
-          <input type='submit' value='Submit'></input>
-      </div>
+          <input type='button' onClick={() => window.open("/main", "_self")} value="Submit" />
+        </div>
       </form>
+      </>
     )
   }
 };
