@@ -2,7 +2,7 @@ import React from 'react';
 import "./styles/booking.css";
 
 
-const hospital_dummydata = [
+const hospitalsDB = [
   {
     name: "North York General Hospital",
     city: "Toronto",
@@ -20,15 +20,21 @@ const hospital_dummydata = [
   }
 ]
 const Booking = () => {
+  const [hospitals, setHospitals] = React.useState(hospitalsDB);
+
+  const remove = (i) => {
+    setHospitals(hospitals.splice(i, 1));
+  }
+
   return <div className="hospitals">
-    {hospital_dummydata.map((hospital, i) => { return (
+    {hospitalsDB.map((hospital, i) => { return (
       <div key={i} className="hospital">
         {hospital.name}
         <br />
         City: {hospital.city}
         <br />
         Address: {hospital.address}
-        <button onClick={console.log("yes")}>X</button>
+        <button onClick={() => remove(i)}>X</button>
       </div>
     )})}
   </div>;

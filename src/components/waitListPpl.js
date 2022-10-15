@@ -17,7 +17,6 @@ const WaitListPpl = () => {
 
     const remove = (i) => {
         setWaitListPpl(waitListPpl.splice(i, 1));
-        console.log(waitListPplDB);
     }
 
     return <div className="glass-morphism-1 h-auto flex">
