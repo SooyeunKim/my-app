@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import WaitListPpl from '../components/waitListPpl'
+import '../App.css';
 
 const WaitList = () => {
     const onClick = () => {
@@ -19,7 +20,7 @@ const WaitList = () => {
                     Add
                 </button>
             </header>
-            <WaitListPpl/>
+            <WaitListPpl />
         </div>
     )
 

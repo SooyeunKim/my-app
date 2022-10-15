@@ -14,6 +14,7 @@
   border: 3px solid green;
   background-color: rgb(30, 242, 132);
   height:50px;
+  padding:25px;
   background-image:
     radial-gradient(at 40% 20%, rgb(125, 228, 164) 0px, transparent 50%),
     radial-gradient(at 80% 0%, rgb(58, 132, 96) 0px, transparent 50%),
@@ -33,10 +34,17 @@
     radial-gradient(at 80% 0%, rgb(58, 132, 96) 0px, transparent 50%),
     radial-gradient(at 0% 50%, rgb(160, 251, 150) 0px, transparent 50%),
 }
-
+.form-control {
+  padding: 100px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.select-control {
+  padding:5px;
+}
 .container {
   /* apply padding within */
-  padding: 1rem 1rem;
+  padding: 10px;
   border: 1px solid #ccc;
 }
 .container-item {
@@ -72,7 +80,6 @@
 }
 
 .glass-morphism-1 {
-  /* From https://css.glass */
   background: rgba(255, 255, 255, 0.38);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -102,7 +109,12 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: #6cf0c2;
 }
-
+.removebtn {
+  position: relative;
+  align: right;
+  padding-right:20px;
+  background-color: white;
+}
 .button-container {
   display: flex;
   justify-content: center;
