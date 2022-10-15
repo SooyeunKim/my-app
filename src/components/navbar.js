@@ -29,6 +29,9 @@ return (
 		<NavBtn>
 		<NavBtnLink to='/signin'>Sign In</NavBtnLink>
 		</NavBtn>
+		<NavBtn>
+		<NavBtnLink to='/signup'>Sign Up</NavBtnLink>
+		</NavBtn>
 	</Nav>
 	</>
 );

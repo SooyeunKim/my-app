@@ -1,5 +1,4 @@
 import React from "react";
-
 const waitListPplDB = [
         {
             name: 'Leanne Kim',
@@ -24,6 +23,7 @@ const WaitListPpl = () => {
     return <div className="glass-morphism-1 h-auto flex">
         {waitListPplDB.map((ppl, i) => {
             return (
+                <Navbar />
                 <div key={i}>
                     <br/>
                     #{i+1}

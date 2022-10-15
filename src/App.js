@@ -9,6 +9,7 @@ import Navbar from './components/navbar';
 import Start from "./pages/Start";
 import Booking from "./pages/Booking";
 import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 import WaitList from "./pages/WaitList";
 import Profile from "./pages/Profile";
 
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/" exact element={<Start />} />
         <Route path="/booking" element={<Booking/>} />
         <Route path="/signin" element={<SignIn/>} />
+        <Route path="/signup" element={<SignUp/>} />
         <Route path="/waitlist" element={<WaitList/>} />
         <Route path="/profile" element={<Profile/>} />
       </Routes>

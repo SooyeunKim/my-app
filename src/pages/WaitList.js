@@ -14,7 +14,7 @@ const WaitList = () => {
 
                 <button 
                 onClick = {onClick}
-                className='btn'
+                className='waitListAddButton'
                 >
                     Add
                 </button>
