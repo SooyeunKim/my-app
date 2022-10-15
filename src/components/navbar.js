@@ -8,6 +8,7 @@ NavBtn,
 NavBtnLink,
 } from './NavbarElements';
 import logo from '../logo.png';
+import "../App.css";
 
 const Navbar = () => {
 return (
@@ -28,13 +29,9 @@ return (
 			<NavLink to='/booking' activeStyles>
 				Booking
 			</NavLink>
+			<NavBtnLink to='/signin'>Sign In</NavBtnLink>
+			<NavBtnLink to='/signup'>Sign Up</NavBtnLink>
 		</NavMenu>
-		<NavBtn>
-		<NavBtnLink to='/signin'>Sign In</NavBtnLink>
-		</NavBtn>
-		<NavBtn>
-		<NavBtnLink to='/signup'>Sign Up</NavBtnLink>
-		</NavBtn>
 	</Nav>
 	</>
 );
