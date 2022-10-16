@@ -20,23 +20,32 @@ class Profile extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <div className="container glass-morphism-1">Profile</div>
         <p align = "center">
-          <label>
-            Hospital: 
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
-          </label>
           <br/>
-          <label>
-            Address: 
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
-          </label>
-          <br/>
-          <p align="center">
-            <input className="waitListAddButton" type="Change" />
-          </p>
+          <div className="input-container">
+            <div className="glass-morphism-1">
+              <div className="title">
+                Profile
+              </div>
+              <br/>
+              <div className="input-container">
+                <label>Hospital Name: </label>
+                <input type="text" value={this.state.value} onChange={this.handleChange} />
+                <br/>
+              </div>
+              <div className="input-container">
+                <label>Address: </label>
+                <input type="text" value={this.state.value} onChange={this.handleChange} />
+                <br/>
+                <br/>
+              </div>
+              <input className="waitListAddButton" type="submit" />
+            </div>
+            
+          </div>
         </p>
       </form>
+      
     );
   }
 }
