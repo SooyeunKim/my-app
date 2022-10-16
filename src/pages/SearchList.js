@@ -33,7 +33,7 @@ const SearchList = () => {
       </h1>
     </p>
     {hospitalsDB.map((hospital, i) => { return (
-      <div key={i} className="glass-morphism-1">
+      <div key={i} className="container-item glass-morphism-1">
         <span style={{ fontWeight: 'bold', fontSize: 22.5 }}>{hospital.name}</span>
         <br />
         <span style={{ background: "#8FE3CF" }}>

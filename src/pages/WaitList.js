@@ -9,16 +9,11 @@ const WaitList = () => {
     }
 
     return (
-        <div className = "container">
+        <div className="container">
             <header>
-                <p align = "center">
-                    <h1 className = "waitList" >Waitlist</h1>
-                    <button 
-                    onClick = {onClick}
-                    className='waitListAddButton'
-                    >
-                        Add
-                    </button>
+                <p align="center">
+                    <h1 className="waitList" >Waitlist</h1>
+                    <button onClick={onClick} className='waitListAddButton'>Add</button>
                 </p>
             </header>
             <WaitListPpl />
