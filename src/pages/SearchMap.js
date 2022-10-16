@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Main = () => {
+const SearchMap = () => {
     return <h1>Main</h1>;
   };
   
-  export default Main;
+  export default SearchMap;

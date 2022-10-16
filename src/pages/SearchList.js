@@ -21,20 +21,16 @@ const hospitalsDB = [
     waiters: 5
   }
 ]
-const Booking = () => {
+const SearchList = () => {
   const [hospitals, setHospitals] = React.useState(hospitalsDB);
 
-  const remove = (i) => {
-    setHospitals(hospitals.splice(i, 1));
-  }
-
-  return <div className="glass-morphism-1">
+  return <div className="container glass-morphism-1">
     <p align = "center">
       <h1 className = "waitList" >
-      <span style={{ textShadow:"#607EAA"}}>
-        Booking Hospitals
+        <span style = {{ textShadow:"#607EAA"}}>
+          Booking Hospitals
         </span>
-        </h1>
+      </h1>
     </p>
     {hospitalsDB.map((hospital, i) => { return (
       <div key={i} className="glass-morphism-1">
@@ -49,12 +45,11 @@ const Booking = () => {
         Address: {hospital.address}
         <br />
         <p align='right'>
-        <button onClick={() => remove(i)}
-        className = 'removebtn'>Book</button>
+        <button onClick={() => console.log("Clicked")} className = 'removebtn'>Book</button>
         </p>
       </div>
     )})}
   </div>;
 };
 
-export default Booking;
+export default SearchList;

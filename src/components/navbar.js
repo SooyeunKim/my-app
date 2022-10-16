@@ -17,15 +17,18 @@ return (
 		<Bars />
 		<NavMenu>
 			<img src={logo} alt="Logo" width="100px"/>
-            <NavLink to='/main' activeStyle>
-                Look for Clinics
+            <NavLink to='/' activeStyle>
+                Start
             </NavLink>
+            <NavLink to='/searchlist' activeStyle>
+                Search Clinics
+			</NavLink>
+			<NavLink to='/searchmap' activeStyles>
+				Map Search
+			</NavLink>
 			<NavLink to='/waitlist' activeStyle>
                 Waitlist
             </NavLink>
-			<NavLink to='/booking' activeStyles>
-				Booking
-			</NavLink>
 			<NavBtnLink to='/signin'>Sign In</NavBtnLink>
 			<NavBtnLink to='/signup'>Sign Up</NavBtnLink>
 		</NavMenu>
