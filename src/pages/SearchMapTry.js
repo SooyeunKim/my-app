@@ -11,7 +11,7 @@ let clinicsData = [
     {
         "name": "Toronto Western Hospital",
         "lat": 43.6534,
-        "lng": -79.4055
+        "lng": -79.405
     },
     {
         "name": "Grand River Hospital",
