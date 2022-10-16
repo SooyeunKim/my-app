@@ -17,8 +17,8 @@ z-index: 30;
 export const NavLink = styled(Link)`
 color: #ffffff;
 display: flex;
-padding-left: 50px;
-padding-right: 50px;
+padding-left: 60px;
+padding-right: 65px;
 align-items: center;
 text-decoration: none;
 height: 100%;
@@ -79,7 +79,7 @@ cursor: pointer;
 transition: all 0.2s ease-in-out;
 text-decoration: none;
 /* Second Nav */
-margin-left: 70px;
+margin-left: 100px;
 &:hover {
 	transition: all 0.2s ease-in-out;
 	background: #fff;
