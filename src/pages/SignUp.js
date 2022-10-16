@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
 import "../App.css";
-import Profile from "./Profile";
+import SignIn from "./SignIn";
 import data from '../data.json';
 
 export default function SignUp() {
@@ -73,7 +73,7 @@ export default function SignUp() {
       <div className="signin-item">
         <div className="login-form">
           <div className="title">Sign Up</div>
-          {isSubmitted ? <div><Profile/></div> : renderForm}
+          {isSubmitted ? <div><SignIn/></div> : renderForm}
         </div>
       </div>
     </p>
