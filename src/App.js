@@ -69,9 +69,9 @@ export default function App() {
       <Routes>
         <Route path="/" exact element={<Start />} />
         <Route path="/searchlist" element={<SearchList/>} />
-        <script
+        {/* <script
         src="https://maps.google.com/maps/api/js?sensor=false"
-        type="text/javascript"></script>
+        type="text/javascript"></script> */}
         <Route path="/searchmap" element={<SearchMap/>}/>
           {/* <script>
             Map();
@@ -90,5 +90,4 @@ export default function App() {
       </Routes>
     </Router>
   );
-          }
-render(<App />);
+}
