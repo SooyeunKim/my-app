@@ -10,7 +10,7 @@ import {GoogleMap, withScriptjs, withGoogleMap, useLoadScript, Marker} from "@re
 import Navbar from './components/navbar';
 import Start from "./pages/Start";
 import SearchList from "./pages/SearchList";
-import SearchMap from "./pages/SearchMap";
+import SearchMap from "./pages/SearchMapTry";
 import WaitList from "./pages/WaitList";
 import Submit from "./pages/Submit";
 import SignIn from "./pages/SignIn";

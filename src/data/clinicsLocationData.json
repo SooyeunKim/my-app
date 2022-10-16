@@ -1,0 +1,14 @@
+{
+    "North York General Hospital": {
+        "lat": "43.7688",
+        "lng": "79.3627"
+    },
+    "Toronto Western Hospital": {
+        "lat": "43.6534",
+        "lng": "79.4055"
+    },
+    "Grand River Hospital": {
+        "lat": "43.4562",
+        "lng": "80.5120"
+    }
+}
