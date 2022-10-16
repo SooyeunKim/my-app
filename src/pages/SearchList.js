@@ -18,12 +18,8 @@ const hospitalsDB = [
     address: "GRH KW Campus, 835 King St W, Kitchener, ON N2G 1G3"
   }
 ]
-const Booking = () => {
+const SearchList = () => {
   const [hospitals, setHospitals] = React.useState(hospitalsDB);
-
-  const remove = (i) => {
-    setHospitals(hospitals.splice(i, 1));
-  }
 
   return <div className="container glass-morphism-1">
     {hospitalsDB.map((hospital, i) => { return (
@@ -33,10 +29,10 @@ const Booking = () => {
         City: {hospital.city}
         <br />
         Address: {hospital.address}
-        <button onClick={() => remove(i)}>Book</button>
+        <button onClick={() => console.log("Clicked")}>Book</button>
       </div>
     )})}
   </div>;
 };
 
-export default Booking;
+export default SearchList;

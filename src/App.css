@@ -90,6 +90,13 @@
   padding: 25px;
 }
 
+
+button {
+  background-color: rgb(160, 251, 150);
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 5px;
+}
 input[type="text"],
 input[type="password"] {
   height: 25px;

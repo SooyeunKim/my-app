@@ -33,7 +33,7 @@ class Start extends React.Component {
           </select>
           <br/>
           <br/>
-          <input type='button' onClick={() => window.open("/main", "_self")} value="Submit" />
+          <input type='button' onClick={() => window.open("/searchlist", "_self")} value="Submit" />
         </div>
       </form>
       </>
