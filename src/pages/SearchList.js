@@ -6,19 +6,19 @@ const hospitalsDB = [
     name: "North York General Hospital",
     city: "Toronto",
     address: "4001 Leslie St, Toronto, ON M2K 1E1",
-    waiters: "12"
+    waiters: 12
   },
   {
     name: "Toronto Western Hospital",
     city: "Toronto",
     address: "399 Bathurst St, Toronto, ON M5T 2S8",
-    waiters: "3"
+    waiters: 3
   },
   {
     name: "Grand River Hospital",
     city: "Kitchener",
     address: "GRH KW Campus, 835 King St W, Kitchener, ON N2G 1G3",
-    waiters: "5"
+    waiters: 5
   }
 ]
 const SearchList = () => {
