@@ -93,6 +93,24 @@
   padding: 25px;
 }
 
+.floating-window {
+  position: fixed;
+  left: 100px;
+  right: 100px;
+  top: 100px;
+  bottom: 100px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.window {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
 
 button {
   background-color: rgb(160, 251, 150);
