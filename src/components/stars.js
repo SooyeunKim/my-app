@@ -2,7 +2,7 @@ import React from 'react'
 import { BsStarFill } from 'react-icons/bs'
 import { BsStarHalf } from 'react-icons/bs'
 import { BsStar } from 'react-icons/bs'
-
+    
 const Stars = (props) => {
     const [rating, setRating] = React.useState(props.rating);
 
