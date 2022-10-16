@@ -1,7 +1,9 @@
 import React from 'react';
+import Page from './Map.html';
+var mapDoc = {__html: Page};
 
 const SearchMap = () => {
-    return <h1>Main</h1>;
+    return (<div dangerouslySetInnerHTML={mapDoc} />)
   };
   
   export default SearchMap;
