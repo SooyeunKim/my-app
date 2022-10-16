@@ -17,9 +17,6 @@ return (
 		<Bars />
 		<NavMenu>
 			<img src={logo} alt="Logo" width="100px"/>
-            <NavLink to='/' activeStyle>
-                Start
-            </NavLink>
             <NavLink to='/main' activeStyle>
                 Look for Clinics
             </NavLink>

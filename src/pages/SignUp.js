@@ -48,31 +48,34 @@ export default function SignUp() {
 
   // JSX code for login form
   const renderForm = (
-    <div className="form">
+    <p align="left">
       <form onSubmit={handleSubmit}>
         <div className="input-container">
-          <label>Username </label>
+          <label>Username: </label>
           <input type="text" name="uname" required />
           {renderErrorMessage("uname")}
         </div>
         <div className="input-container">
-          <label>Password </label>
+          <label>Password: </label>
           <input type="password" name="pass" required />
           {renderErrorMessage("pass")}
         </div>
-        <div className="button-container">
-          <input type="submit" />
-        </div>
+        <p align="center">
+          <input className="waitListAddButton" type="submit" />
+        </p>
       </form>
-    </div>
+    </p>
   );
 
   return (
-    <div className="app">
-      <div className="login-form">
-        <div className="title">Sign Up</div>
-        {isSubmitted ? <div><Profile/></div> : renderForm}
+    <p align="center">
+      <br/>
+      <div className="signin-item">
+        <div className="login-form">
+          <div className="title">Sign Up</div>
+          {isSubmitted ? <div><Profile/></div> : renderForm}
+        </div>
       </div>
-    </div>
+    </p>
   );
 }
