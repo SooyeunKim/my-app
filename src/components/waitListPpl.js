@@ -17,12 +17,13 @@ const WaitListPpl = () => {
 
     const remove = (i) => {
         setWaitListPpl(waitListPpl.splice(i, 1));
+        console.log(i);
     }
 
     return <div className="container glass-morphism-1 h-auto flex">
         {waitListPplDB.map((ppl, i) => {
             return (
-                <div key={i} className = "glass-morphism-1">
+                <div key={i} className = "container-item glass-morphism-1">
                     #{i + 1}
                     <br />
                     Name: {ppl.name}
