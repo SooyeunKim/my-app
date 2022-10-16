@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from './components/navbar';
 import Start from "./pages/Start";
 import SearchList from "./pages/SearchList";
-import SearchMap from "./pages/SearchMap";
+import SearchMap from "./pages/SearchMapTry";
 import WaitList from "./pages/WaitList";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
