@@ -37,7 +37,3 @@ function Map() {
 //         )
 //     }
 // }
-
-// export default GoogleApiWrapper({
-//     apiKey: "AIzaSyAAWxvllGSQjs8jQIhaX2lXyA7dqYcj9UI"//sean get api key please
-// })(MapContainer)
